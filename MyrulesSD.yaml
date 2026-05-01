@@ -1,0 +1,83 @@
+  # --------- DNS 泄漏测试 IP 安全检查 查询 网站 ------------
+  # 优先强制这几个顶级隐私站走代理，防止 Rule-Set 范围过大导致不确定的解析行为
+  # - DOMAIN-SUFFIX,ipleak.net,⛔ 手动切换
+  - DOMAIN-SUFFIX,dnsleaktest.com
+  - DOMAIN-KEYWORD,dnsleaktest
+  - DOMAIN-SUFFIX,browserleaks.com
+  - DOMAIN-KEYWORD,browserleaks
+  - DOMAIN-SUFFIX,whatismyip.com
+  - DOMAIN-SUFFIX,whoer.net
+  #
+  # ------------------ Gemini、Google AI ------------------
+  - DOMAIN-SUFFIX,gemini.google.com
+  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+  - DOMAIN-SUFFIX,notebooklm.google
+  - DOMAIN-SUFFIX,notebooklm.google.com
+  - DOMAIN-SUFFIX,alcresource-pa.googleapis.com
+  - DOMAIN-SUFFIX,static.data.corp.google.com
+  - DOMAIN-KEYWORD,generativelanguage
+  - DOMAIN-KEYWORD,colab
+  # Google AI 语音与多模态支持（选填，若 Gemini 报错建议加上）
+  - DOMAIN-SUFFIX,speech.googleapis.com
+  - DOMAIN-SUFFIX,playconsole-pa.googleapis.com
+  #
+  # ------------------ ChatGPT --------------------
+  - DOMAIN-KEYWORD,chatgpt
+  - DOMAIN-SUFFIX,gvt3.com
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,chatgpt.com
+  - DOMAIN-SUFFIX,oaistatic.com
+  - DOMAIN-SUFFIX,oaiusercontent.com
+  - DOMAIN-KEYWORD,openai
+  #
+  # ------------------ Google 翻译专用 ------------------
+  - DOMAIN-SUFFIX,translate.google.com  # 核心翻译接口（网页版及 API）
+  - DOMAIN-SUFFIX,translate.googleapis.com  # 核心翻译接口（网页版及 API）
+  - DOMAIN,translate.google.cn  # 翻译所需的数据与静态资源
+  - DOMAIN,translate.gstatic.com  # 翻译所需的数据与静态资源
+  - DOMAIN-KEYWORD,translate  # 针对 Chrome 浏览器自带翻译功能的嗅探（非常重要）
+  #
+  # --------- Steam 核心 (确保 VR 界面加载正常) ---------
+  - DOMAIN-SUFFIX,steampowered.com
+  - DOMAIN-SUFFIX,steamcommunity.com
+  - DOMAIN-SUFFIX,steamstatic.com
+  - DOMAIN-SUFFIX,steam-api.com
+  - DOMAIN-SUFFIX,s.team
+  - DOMAIN-SUFFIX,steamgames.com
+  - DOMAIN-SUFFIX,steamstat.us
+  # --------------------------------------------------
+  #
+  # ---- Valve 硬件与 Steam VR (针对 VR 游戏关键优化) ----
+  - DOMAIN-SUFFIX,valvesoftware.com
+  - DOMAIN-SUFFIX,steam.tv
+  - DOMAIN-SUFFIX,underlords.com
+  - DOMAIN-SUFFIX,playartifact.com
+  #
+  # ---- 全球 CDN 节点 (加速 VR 资源和游戏下载) ----
+  - DOMAIN-SUFFIX,akamaihd.net
+  - DOMAIN-SUFFIX,akamaized.net
+  - DOMAIN-SUFFIX,steamcontent.com
+  - DOMAIN-SUFFIX,steamusercontent.com
+  - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
+  - DOMAIN-SUFFIX,edgesuite.net
+  - DOMAIN-SUFFIX,hwcdn.net
+  #
+  # ---- 联机与登录管理器 (解决 VR 联机掉线) ----
+  - DOMAIN-SUFFIX,cm.steampowered.com
+  - DOMAIN-SUFFIX,steamserver.net
+  - DOMAIN-SUFFIX,steam-chat.com
+  #
+  # =================【 after the fall 】 =====================
+  - DOMAIN-SUFFIX,after-the-fall.cloudfunctions.net
+  - DOMAIN-KEYWORD,after-the-fall
+  # ==========================================================
+  #
+  # ---- VRChat (核心：捕获所有子域名和资源服务器) ----
+  - DOMAIN-SUFFIX,vrchat.com
+  - DOMAIN-SUFFIX,vrchat.cloud
+  - DOMAIN-SUFFIX,tenor.com
+  - DOMAIN-KEYWORD,vrchat
+  #
+  # ----------------- 特 殊 站 点 ------------------
+  - DOMAIN-SUFFIX,zh.stripchatgirls.com
+  # -----------------------------------------------
