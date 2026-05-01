@@ -56,6 +56,9 @@ payload:
   #
   # ---- 全球 CDN 节点 (加速 VR 资源和游戏下载) ----
   - DOMAIN-SUFFIX,akamaihd.net
+  # 注意上面【akamaihd.net】：这些 CDN “也会承载很多国内的正版加速资源”。
+  # 上面【akamaihd.net】如果全部走代理，可能会占用较多代理流量且下载速度受限于节点。
+  # 上面【akamaihd.net】但考虑到你追求“0 泄露”和联机稳定性，维持现状（走代理）是最保险的。
   - DOMAIN-SUFFIX,akamaized.net
   - DOMAIN-SUFFIX,steamcontent.com
   - DOMAIN-SUFFIX,steamusercontent.com
@@ -67,6 +70,7 @@ payload:
   - DOMAIN-SUFFIX,cm.steampowered.com
   - DOMAIN-SUFFIX,steamserver.net
   - DOMAIN-SUFFIX,steam-chat.com
+  - DOMAIN-SUFFIX,steamclient.com # 针对 VR 游戏联机，建议增加一个 Valve 的认证域名，防止登录校验失败。
   #
   # =================【 after the fall 】 =====================
   - DOMAIN-SUFFIX,after-the-fall.cloudfunctions.net
