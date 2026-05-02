@@ -1,0 +1,36 @@
+payload:
+  # ---------- 拒绝（奇异云 机场 网址）连接 -----------
+  - DOMAIN-SUFFIX,q1cloud.me  # 🛑拒绝连接
+  - DOMAIN-SUFFIX,cutecloud.me  # 🛑拒绝连接
+  - DOMAIN-KEYWORD,q1cloud  # 🛑拒绝连接
+  - DOMAIN-KEYWORD,cutecloud  # 🛑拒绝连接
+  # ------------------- 垃圾 广告、域名 拦截（Mozilla 泄漏拦截）-------------------
+  - DOMAIN-SUFFIX,tanx.com  # 🛑拒绝连接 阿里旗下营销交互 主要负责网页广告的实时竞价、流量分发用户行为追踪
+  # -----------------------------------------------
+  # Mozilla 拦截：你拦截了 mozilla.com,
+  # 虽然这能拦截 Firefox 的某些上报，但也会导致 Firefox 浏览器无法检查更新，甚至无法同步账号。
+  # 如果你的个人电脑使用 Firefox，请知晓此影响。
+  - DOMAIN-SUFFIX,mozilla.com  # 🛑拒绝连接 ← 这条最重要，一条搞定几乎所有变种
+  - DOMAIN-KEYWORD,mozilla.com  # 🛑拒绝连接 兜底保险（防止极少数特殊情况）
+  # -----------------------------------------------
+  # ---------------【 华为播放盒子、手机等（广告/追踪 监控/统计 行为 】-----------------
+  - DOMAIN-SUFFIX,dobel.cn  # 🛑拒绝连接 P2P 联网动作服务
+  - DOMAIN-SUFFIX,lthttp.com  # 🛑拒绝连接 一个第三方动态代理 IP 接口 拦截它不仅可以节省带宽，还能切断某种潜在的“非正规”数据传输路径
+  - DOMAIN-SUFFIX,d1xz.net  # 🛑拒绝连接 一个星座运势、算命、取名、黄历等内容的门户网站
+  - DOMAIN-SUFFIX,adanxing.com  # 🛑拒绝连接 艾答星的广告SDK 用户行为追踪
+  - DOMAIN-KEYWORD,pangolin-sdk  # 🛑拒绝连接 穿山甲（广告/追踪）
+  # -----------------------------------------------  
+  # 华为设备优化：你针对 huan.tv、994455.xyz（内网穿透相关）和 p2paddr.com 设置拦截，这非常符合你对华为终端监控行为的审计需求。
+  - DOMAIN-SUFFIX,huan.tv  # 🛑拒绝连接“华为终端”统计 属于设备级的“监控/统计”行为
+  - DOMAIN-SUFFIX,994455.xyz  # 🛑拒绝连接 内网穿透远程待命（有没有人要远程看我的画面）
+  - DOMAIN-SUFFIX,p2paddr.com  # 🛑拒绝连接 P2P 联网动作服务
+  # -----------------------------------------------
+  # 字节跳动系拦截：你拦截了 snssdk.com 和 toutiao。
+  # 这会直接导致今日头条、抖音等 App 在你的网络下无法正常加载内容或极度卡顿。如果这是你的预期（彻底禁用这些 App），则配置无误。
+  - DOMAIN-SUFFIX,snssdk.com  # 🛑拒绝连接 它是字节跳动产品的内容分发（CDN）、统计上报以及API 接口域名
+  - DOMAIN-KEYWORD,snssdk  # 🛑拒绝连接 字节系域名
+  - DOMAIN-KEYWORD,toutiao  # 🛑拒绝连接 字节系域名
+  # -----------------------------------------------
+  - DOMAIN-SUFFIX,gepush.com  # 🛑拒绝连接 是 “个推” (GeTui) 的域名
+  - DOMAIN-SUFFIX,bytegecko.com  # 🛑拒绝连接 字节系另一个常见的漏网之鱼
+  # ===================================================================
