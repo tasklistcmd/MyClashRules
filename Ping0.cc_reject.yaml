@@ -20,7 +20,7 @@ payload:
   - DOMAIN,ip.6655.com
   - DOMAIN,ip.taobao.com
   - DOMAIN,myip.ipip.net
-  - DOMAIN-SUFFIX,ipip.net
+  # - DOMAIN-SUFFIX,ipip.net
   #
   # 常见国产检测工具
   - DOMAIN-SUFFIX,cip.cc
