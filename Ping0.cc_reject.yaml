@@ -1,30 +1,30 @@
 payload:
   # 国内正在出卖你的｜真实 DNS｜IP 地址｜的 IP 工具｜恶意 WebRTC 泄漏｜网站：
   # Ping0.cc 相关域名
-  DOMAIN-SUFFIX,ping0.cc
-  DOMAIN-KEYWORD,ping0
+  - DOMAIN-SUFFIX,ping0.cc
+  - DOMAIN-KEYWORD,ping0
   #
   # ip138 相关域名 (包含其子域及接口)
-  DOMAIN-SUFFIX,ip138.com
-  DOMAIN-SUFFIX,api.ip138.com
-  DOMAIN-SUFFIX,static.ip138.com
-  DOMAIN-KEYWORD,ip138
+  - DOMAIN-SUFFIX,ip138.com
+  - DOMAIN-SUFFIX,api.ip138.com
+  - DOMAIN-SUFFIX,static.ip138.com
+  - DOMAIN-KEYWORD,ip138
   #
   # 百度 IP 检测 (非常常用)
-  DOMAIN,www.baidu.com/s?wd=ip
-  DOMAIN,opendata.baidu.com
+  - DOMAIN,www.baidu.com/s?wd=ip
+  - DOMAIN,opendata.baidu.com
   #
   # 腾讯/网易/新浪等 IP 接口
-  DOMAIN,ip.qq.com
-  DOMAIN,ip.ws.126.net
-  DOMAIN,ip.6655.com
-  DOMAIN,ip.taobao.com
-  DOMAIN,myip.ipip.net
-  DOMAIN-SUFFIX,ipip.net
+  - DOMAIN,ip.qq.com
+  - DOMAIN,ip.ws.126.net
+  - DOMAIN,ip.6655.com
+  - DOMAIN,ip.taobao.com
+  - DOMAIN,myip.ipip.net
+  - DOMAIN-SUFFIX,ipip.net
   #
   # 常见国产检测工具
-  DOMAIN-SUFFIX,cip.cc
-  DOMAIN-SUFFIX,ip.cn
-  DOMAIN-SUFFIX,ip111.cn
-  DOMAIN-SUFFIX,ipapi.co
-  DOMAIN-SUFFIX,ip-api.com
+  - DOMAIN-SUFFIX,cip.cc
+  - DOMAIN-SUFFIX,ip.cn
+  - DOMAIN-SUFFIX,ip111.cn
+  - DOMAIN-SUFFIX,ipapi.co
+  - DOMAIN-SUFFIX,ip-api.com
