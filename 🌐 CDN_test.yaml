@@ -1,0 +1,32 @@
+payload:
+  # ==== 🌐 CDN（完整优化版）====
+  #     【🌐 CDN 智能分流】
+  # ---- Akamai ----
+  - DOMAIN-SUFFIX,akamaihd.net
+  - DOMAIN-SUFFIX,akamaized.net
+  - DOMAIN-SUFFIX,edgesuite.net
+  #
+  # ---- Cloudflare ----
+  - DOMAIN-SUFFIX,cloudflare.com
+  - DOMAIN-SUFFIX,cloudflare.net
+  #
+  # ---- Fastly（GitHub / Steam 常用）----
+  - DOMAIN-SUFFIX,fastly.net
+  - DOMAIN-SUFFIX,fastlylb.net
+  #
+  # ---- Steam CDN ----
+  - DOMAIN-SUFFIX,steamcontent.com
+  - DOMAIN-SUFFIX,steamusercontent.com
+  #
+  # --- 开源 CDN ---
+  - DOMAIN-SUFFIX,jsdelivr.net
+  - DOMAIN-SUFFIX,unpkg.com
+  - DOMAIN-SUFFIX,cdnjs.cloudflare.com
+  #
+  # --- GitHub CDN ---
+  - DOMAIN-SUFFIX,githubusercontent.com
+  - DOMAIN-SUFFIX,github.io
+  #
+  # ---- 通用 CDN ----
+  - DOMAIN-SUFFIX,hwcdn.net
+  - DOMAIN-SUFFIX,cdn.cloudflare.net
